@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.apple.androidlearn">
+    package="com.example.communicationtest">
 
-     <!--声明本应用 可允许通信的权限-->
-    <permission android:name="com.example.apple.androidlearn.PROVIDER" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.example.apple.androidlearn.PROVIDER"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,13 +17,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!--如果需要外部应用访问本provider，则需要配置权限,如果不配置，可以被所有的应用都访问-->
-        <provider android:name=".contentprovidertest.LijingContentProvider"
-            android:authorities="com.example.apple.androidlearn"
-
-            android:exported="true"/>
-
     </application>
 
 </manifest>
