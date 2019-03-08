@@ -1,4 +1,4 @@
-package com.example.apple.androidlearn;
+package com.example.apple.androidlearn.contentprovidertest;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -8,7 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.apple.androidlearn.R;
+
+public class ProviderActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
